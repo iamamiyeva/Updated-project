@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>project</title>
+    <!-- <link rel="stylesheet" href="src/style.scss"> -->
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+
+    <h1>Registration form for YouTube</h1>
+    <form method="post" action="https://www.youtube.com"> 
+        <fieldset>
+            <legend>Personal informations</legend>
+            <label for="first-name" class="first-name">
+                <img class="img" src="bx-user.svg" >
+                <input id="first-name" type="text"  placeholder="Your first name" required>
+            </label>
+            
+            <label for="last-name" class="last-name">
+                <img src="bxs-user.svg" alt="" class="img">
+                <input type="text" id="last-name" placeholder="Your last name" required>
+            </label>
+
+            <label for="age" class="age">
+                <img src="bx-calendar.svg" class="img">
+                <input type="date" id="age" placeholder="Your birth date" required>
+            </label>
+
+            <label for="password" class="password">
+                <img src="bx-lock-alt.svg" class="img">
+                <input name="password" pattern="[a-z0-9]{8,}" type="password" id="password" placeholder="Your password" required>
+            </label>
+
+            <label for="confirm-password" class="confirm-password">
+                <img  src="bxs-lock-alt.svg" class="img">
+                <input name="password" type="password" id="confirm-password" pattern="[a-z0-9]{8,}" placeholder="Confirm your password" required>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Contact informations</legend>
+            <label for="email" class="email">
+                <img src="bx-envelope.svg" class="img">
+                <input type="email" placeholder="Your email address" id="email" required>
+            </label>
+
+            <label for="phone" class="phone">
+                <img src="bxs-phone.svg" class="img">
+                <input type="tel" pattern="[0-9]{4} [0-9]{3} [0-9]{3}" placeholder="Your phone number" id="phone" required>
+            </label>
+
+            <label for="instagram" class="instagram">
+                <img src="bxl-instagram.svg" class="img">
+                <input type="url" placeholder="Your Instagram Username" id="instagram">
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Gender</legend>
+            <label for="female">
+                <img src="bx-female.svg" class="img">
+                <input type="radio" name="gender" id="female" checked> Female
+            </label>
+
+            <label for="male">
+                <img src="bx-male.svg" class="img">
+                <input type=
+                "radio" name="gender" id="male" checked> Male
+            </label>
+
+            <label for="other">
+                <img src="bx-male-female.svg" class="img">
+                <input type="radio" name="gender" id="male" checked> I dont't want to mention it.
+            </label>
+        </fieldset>
+        <fieldset>
+            <label for="aim">What is your main target to use YouTube?
+                <select name="aim" id="aim" required class="aim">
+                    <option value=" ">(select one)</option>
+                    <option value="1">Watch videos</option>
+                    <option value="2">Upload videos</option>
+                    <option value="3">Comment on videos</option>
+                    <option value="4">Like videos</option>
+                    <option value="5">Subscribe to channels</option>
+                    <option value="6">Create a channel</option>
+                    <option value="7">Live stream</option>
+                    <option value="collaborate">Collaborate with others</option>
+                    <option value="learn">Learn from others</option>
+                    <option value="entertain">Entertain others</option>
+                    <option value="share">Share videos</option>
+                    <option value="network">Network with others</option>
+                </select>
+            </label>
+        </fieldset>
+        
+        <fieldset>
+            <input type="checkbox" required class="terms-and-conditions"> <span>I agree to the </span> <a href="#">terms and conditions</a>.
+        </fieldset>
+
+        <input type="submit" value="Submit" class="submit">
+    </form>
+</body>
+</html>
+  </body>
+</html>

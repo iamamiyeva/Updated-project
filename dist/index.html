@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>project</title>
+    <!-- <link rel="stylesheet" href="src/style.scss"> -->
+    <script type="module" crossorigin src="/assets/index-BFa2x1BD.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-3B5OmqD5.css">
+  </head>
+  <body>
+    <div id="app"></div>
+
+    <h1>Registration form for YouTube</h1>
+    <form method="post" action="https://www.youtube.com"> 
+        <fieldset>
+            <legend>Personal informations</legend>
+            <label for="first-name" class="first-name">
+                <img class="img" src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3e%3cpath%20d='M12%202a5%205%200%201%200%205%205%205%205%200%200%200-5-5zm0%208a3%203%200%201%201%203-3%203%203%200%200%201-3%203zm9%2011v-1a7%207%200%200%200-7-7h-4a7%207%200%200%200-7%207v1h2v-1a5%205%200%200%201%205-5h4a5%205%200%200%201%205%205v1z'/%3e%3c/svg%3e" >
+                <input id="first-name" type="text"  placeholder="Your first name" required>
+            </label>
+            
+            <label for="last-name" class="last-name">
+                <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3e%3cpath%20d='M7.5%206.5C7.5%208.981%209.519%2011%2012%2011s4.5-2.019%204.5-4.5S14.481%202%2012%202%207.5%204.019%207.5%206.5zM20%2021h1v-1c0-3.859-3.141-7-7-7h-4c-3.86%200-7%203.141-7%207v1h17z'/%3e%3c/svg%3e" alt="" class="img">
+                <input type="text" id="last-name" placeholder="Your last name" required>
+            </label>
+
+            <label for="age" class="age">
+                <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3e%3cpath%20d='M7%2011h2v2H7zm0%204h2v2H7zm4-4h2v2h-2zm0%204h2v2h-2zm4-4h2v2h-2zm0%204h2v2h-2z'/%3e%3cpath%20d='M5%2022h14c1.103%200%202-.897%202-2V6c0-1.103-.897-2-2-2h-2V2h-2v2H9V2H7v2H5c-1.103%200-2%20.897-2%202v14c0%201.103.897%202%202%202zM19%208l.001%2012H5V8h14z'/%3e%3c/svg%3e" class="img">
+                <input type="date" id="age" placeholder="Your birth date" required>
+            </label>
+
+            <label for="password" class="password">
+                <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3e%3cpath%20d='M12%202C9.243%202%207%204.243%207%207v3H6c-1.103%200-2%20.897-2%202v8c0%201.103.897%202%202%202h12c1.103%200%202-.897%202-2v-8c0-1.103-.897-2-2-2h-1V7c0-2.757-2.243-5-5-5zm6%2010%20.002%208H6v-8h12zm-9-2V7c0-1.654%201.346-3%203-3s3%201.346%203%203v3H9z'/%3e%3c/svg%3e" class="img">
+                <input name="password" pattern="[a-z0-9]{8,}" type="password" id="password" placeholder="Your password" required>
+            </label>
+
+            <label for="confirm-password" class="confirm-password">
+                <img  src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3e%3cpath%20d='M20%2012c0-1.103-.897-2-2-2h-1V7c0-2.757-2.243-5-5-5S7%204.243%207%207v3H6c-1.103%200-2%20.897-2%202v8c0%201.103.897%202%202%202h12c1.103%200%202-.897%202-2v-8zM9%207c0-1.654%201.346-3%203-3s3%201.346%203%203v3H9V7z'/%3e%3c/svg%3e" class="img">
+                <input name="password" type="password" id="confirm-password" pattern="[a-z0-9]{8,}" placeholder="Confirm your password" required>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Contact informations</legend>
+            <label for="email" class="email">
+                <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3e%3cpath%20d='M20%204H4c-1.103%200-2%20.897-2%202v12c0%201.103.897%202%202%202h16c1.103%200%202-.897%202-2V6c0-1.103-.897-2-2-2zm0%202v.511l-8%206.223-8-6.222V6h16zM4%2018V9.044l7.386%205.745a.994.994%200%200%200%201.228%200L20%209.044%2020.002%2018H4z'/%3e%3c/svg%3e" class="img">
+                <input type="email" placeholder="Your email address" id="email" required>
+            </label>
+
+            <label for="phone" class="phone">
+                <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3e%3cpath%20d='m20.487%2017.14-4.065-3.696a1.001%201.001%200%200%200-1.391.043l-2.393%202.461c-.576-.11-1.734-.471-2.926-1.66-1.192-1.193-1.553-2.354-1.66-2.926l2.459-2.394a1%201%200%200%200%20.043-1.391L6.859%203.513a1%201%200%200%200-1.391-.087l-2.17%201.861a1%201%200%200%200-.29.649c-.015.25-.301%206.172%204.291%2010.766C11.305%2020.707%2016.323%2021%2017.705%2021c.202%200%20.326-.006.359-.008a.992.992%200%200%200%20.648-.291l1.86-2.171a.997.997%200%200%200-.085-1.39z'/%3e%3c/svg%3e" class="img">
+                <input type="tel" pattern="[0-9]{4} [0-9]{3} [0-9]{3}" placeholder="Your phone number" id="phone" required>
+            </label>
+
+            <label for="instagram" class="instagram">
+                <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3e%3cpath%20d='M11.999%207.377a4.623%204.623%200%201%200%200%209.248%204.623%204.623%200%200%200%200-9.248zm0%207.627a3.004%203.004%200%201%201%200-6.008%203.004%203.004%200%200%201%200%206.008z'/%3e%3ccircle%20cx='16.806'%20cy='7.207'%20r='1.078'/%3e%3cpath%20d='M20.533%206.111A4.605%204.605%200%200%200%2017.9%203.479a6.606%206.606%200%200%200-2.186-.42c-.963-.042-1.268-.054-3.71-.054s-2.755%200-3.71.054a6.554%206.554%200%200%200-2.184.42%204.6%204.6%200%200%200-2.633%202.632%206.585%206.585%200%200%200-.419%202.186c-.043.962-.056%201.267-.056%203.71%200%202.442%200%202.753.056%203.71.015.748.156%201.486.419%202.187a4.61%204.61%200%200%200%202.634%202.632%206.584%206.584%200%200%200%202.185.45c.963.042%201.268.055%203.71.055s2.755%200%203.71-.055a6.615%206.615%200%200%200%202.186-.419%204.613%204.613%200%200%200%202.633-2.633c.263-.7.404-1.438.419-2.186.043-.962.056-1.267.056-3.71s0-2.753-.056-3.71a6.581%206.581%200%200%200-.421-2.217zm-1.218%209.532a5.043%205.043%200%200%201-.311%201.688%202.987%202.987%200%200%201-1.712%201.711%204.985%204.985%200%200%201-1.67.311c-.95.044-1.218.055-3.654.055-2.438%200-2.687%200-3.655-.055a4.96%204.96%200%200%201-1.669-.311%202.985%202.985%200%200%201-1.719-1.711%205.08%205.08%200%200%201-.311-1.669c-.043-.95-.053-1.218-.053-3.654%200-2.437%200-2.686.053-3.655a5.038%205.038%200%200%201%20.311-1.687c.305-.789.93-1.41%201.719-1.712a5.01%205.01%200%200%201%201.669-.311c.951-.043%201.218-.055%203.655-.055s2.687%200%203.654.055a4.96%204.96%200%200%201%201.67.311%202.991%202.991%200%200%201%201.712%201.712%205.08%205.08%200%200%201%20.311%201.669c.043.951.054%201.218.054%203.655%200%202.436%200%202.698-.043%203.654h-.011z'/%3e%3c/svg%3e" class="img">
+                <input type="url" placeholder="Your Instagram Username" id="instagram">
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Gender</legend>
+            <label for="female">
+                <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3e%3ccircle%20cx='12'%20cy='4'%20r='2'/%3e%3cpath%20d='M14.948%207.684A.997.997%200%200%200%2014%207h-4a.998.998%200%200%200-.948.684l-2%206%201.775.593L8%2018h2v4h4v-4h2l-.827-3.724%201.775-.593-2-5.999z'/%3e%3c/svg%3e" class="img">
+                <input type="radio" name="gender" id="female" checked> Female
+            </label>
+
+            <label for="male">
+                <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3e%3ccircle%20cx='12'%20cy='4'%20r='2'/%3e%3cpath%20d='M15%207H9a1%201%200%200%200-1%201v7h2v7h4v-7h2V8a1%201%200%200%200-1-1z'/%3e%3c/svg%3e" class="img">
+                <input type=
+                "radio" name="gender" id="male" checked> Male
+            </label>
+
+            <label for="other">
+                <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3e%3ccircle%20cx='6'%20cy='4'%20r='2'/%3e%3cpath%20d='M9%207H3a1%201%200%200%200-1%201v7h2v7h4v-7h2V8a1%201%200%200%200-1-1z'/%3e%3ccircle%20cx='17'%20cy='4'%20r='2'/%3e%3cpath%20d='M20.21%207.73a1%201%200%200%200-1-.73h-4.5a1%201%200%200%200-1%20.73L12%2014h2l-1%204h2v4h4v-4h2l-1-4h2z'/%3e%3c/svg%3e" class="img">
+                <input type="radio" name="gender" id="male" checked> I dont't want to mention it.
+            </label>
+        </fieldset>
+        <fieldset>
+            <label for="aim">What is your main target to use YouTube?
+                <select name="aim" id="aim" required class="aim">
+                    <option value=" ">(select one)</option>
+                    <option value="1">Watch videos</option>
+                    <option value="2">Upload videos</option>
+                    <option value="3">Comment on videos</option>
+                    <option value="4">Like videos</option>
+                    <option value="5">Subscribe to channels</option>
+                    <option value="6">Create a channel</option>
+                    <option value="7">Live stream</option>
+                    <option value="collaborate">Collaborate with others</option>
+                    <option value="learn">Learn from others</option>
+                    <option value="entertain">Entertain others</option>
+                    <option value="share">Share videos</option>
+                    <option value="network">Network with others</option>
+                </select>
+            </label>
+        </fieldset>
+        
+        <fieldset>
+            <input type="checkbox" required class="terms-and-conditions"> <span>I agree to the </span> <a href="#">terms and conditions</a>.
+        </fieldset>
+
+        <input type="submit" value="Submit" class="submit">
+    </form>
+</body>
+</html>
+  </body>
+</html>

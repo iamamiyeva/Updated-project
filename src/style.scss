@@ -1,0 +1,128 @@
+body {
+    background-image: url("istockphoto-517188688-1024x1024.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+h1 {
+    margin-bottom: 30px;
+    text-align: center;
+    color: white;
+}
+
+legend {
+    font-size: 20px;
+    font-style: italic; 
+    color: #ffffff;
+    font-weight: 900;
+}
+
+label {
+   
+    display: block;
+    margin: 10px auto;
+    font-size: 15px;
+    color: #ffffff;
+}
+
+input {
+    font-size: 15px;
+    padding: 10px 10px;
+    border-radius: 35px;
+    border-style: solid;
+    background: none;
+    border-color: #ffffff;
+    color: #ffffff;
+    width: 25vw;
+    transition: all 0.3s;
+}
+
+input::placeholder{
+    color: #ffffff;
+    font-size: 15px;
+}
+
+input:hover {
+    background-color: #ffffff;
+    color: black;
+    border: none;
+    font-size: 20px;
+    width: 27vw;
+    padding: 12px 12px;
+}
+
+input:focus {
+    border-color: #00ff00;
+    border-width: 2px;
+    outline: none;
+}
+
+input:hover::placeholder {
+    color: black;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+}
+
+.img {
+   vertical-align: middle;
+   padding: 6px 6px;
+   background-color: #ffffff;
+   border-radius: 50%;
+}
+
+label[for="aim"] {
+    font-weight: 900;
+}
+
+fieldset {
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    border-style: dashed ;
+}
+
+fieldset:last-of-type {
+    border: none;
+    padding: 20px 0;
+}
+
+span {
+    color: #ffffff;
+    font-weight: 900;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: 900;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+input[type="checkbox"]{
+    transform: scale(1.5);
+    border: none;
+}
+
+input[type="checkbox"]:hover {
+    transform: scale(2);
+}
+
+input[type="checkbox"]:hover:checked {
+    transform: scale(2);
+}
+
+input[type="checkbox"]:checked {
+    accent-color: #ffffff; 
+    transform: scale(1.5);
+}
+
+input[type="submit"] {
+    display: block;
+    margin: 10px auto;
+}
